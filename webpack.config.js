@@ -7,6 +7,9 @@ module.exports = {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
   },
+  devServer: {
+    contentBase: "./dist",
+  },
   plugins: [new HtmlWebpackPlugin({ title: "Output Management" })],
   module: {
     rules: [
