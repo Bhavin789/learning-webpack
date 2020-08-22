@@ -5,7 +5,6 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 module.exports = {
   entry: {
     app: "./src/index.js",
-    another: "./src/another-module.js",
   },
   output: {
     filename: "[name].bundle.js",
@@ -25,10 +24,5 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
     ],
-  },
-  optimization: {
-    splitChunks: {
-      chunks: "all",
-    },
   },
 };
